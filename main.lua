@@ -129,7 +129,7 @@ function love.load()
         ['paddle-select'] = function() return PaddleSelectState() end
     }
     -- change() instantiates a State class (calls: exit() of previous state class -> init() of the new state class -> enter() of the new state class)
-    -- objects or variables needed in more than 1 state can be tranferred with the second Parameter 'enterParams' of the change() method. They will be available in the enter() method of the next state.
+    -- objects or variables needed in more than 1 state can be transferred with the second Parameter 'enterParams' of the change() method. They will be available in the enter() method of the next state.
     -- if not referenced by something else (e.g. by passing them as 'enterParams' for the next state),
     -- the previous state object and all of its members get discarded and cleaned up (Lua garbage collection) (because the variable the state object was assigned to gets overwritten by the next state object)
     gStateMachine:change('start', {

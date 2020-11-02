@@ -72,7 +72,7 @@ function PlayState:update(dt)
     end
 
     local is_damage = false
-    -- if ball goes below bounds, remove it. decrase health if all balls are gone (extra loop for removing)
+    -- if ball goes below bounds, remove it. decrease health if all balls are gone (extra loop for removing)
     for k, ball in pairs(self.balls) do
         if ball.y > VIRTUAL_HEIGHT then
             table.remove(self.balls, k)

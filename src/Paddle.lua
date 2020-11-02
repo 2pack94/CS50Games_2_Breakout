@@ -16,7 +16,7 @@
 -- inherits from Rect
 Paddle = Class{__includes = Rect}
 
-PADDLE_BASE_WIDTH = 32      -- width of the smallest paddle. all other paddles are muliples of that width
+PADDLE_BASE_WIDTH = 32      -- width of the smallest paddle. all other paddles are multiples of that width
 PADDLE_HEIGHT = 16
 PADDLE_NUM_SKINS = 4        -- number of different paddle colors in the spritesheet
 PADDLE_NUM_SIZES = 4        -- number of different paddle sizes in the spritesheet

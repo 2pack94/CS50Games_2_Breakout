@@ -87,7 +87,6 @@ function LevelMaker.createMap(level)
                 * BRICK_WIDTH                                   -- multiply by BRICK_WIDTH
                 + extra_screen_space / 2                        -- extra padding when VIRTUAL_WIDTH is not a multiple of BRICK_WIDTH
                 + (max_num_cols_on_screen - num_cols) * (BRICK_WIDTH / 2), -- left-side padding for when there are fewer than max_num_cols columns
-                
                 -- y-coordinate
                 y * BRICK_HEIGHT        -- this also adds a top padding
             )
