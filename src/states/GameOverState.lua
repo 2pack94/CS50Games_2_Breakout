@@ -24,12 +24,12 @@ function GameOverState:enter(params)
 end
 
 function GameOverState:update(dt)
-    if not keyboardWasPressed('enter') and not keyboardWasPressed('return') then
+    if not keyboardWasPressed('return') then
         return
     end
     -- see if score is higher than any in the high scores table
     local is_high_score = false
-    
+
     -- count from lowest (higest index) to highest (lowest index) high score
     for i = NUM_HIGH_SCORES, 1, -1 do
         local cur_high_score = self.high_scores[i].score or 0

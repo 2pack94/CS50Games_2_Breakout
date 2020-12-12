@@ -43,7 +43,7 @@ function ServeState:update(dt)
         brick:update(dt)
     end
 
-    if keyboardWasPressed('enter') or keyboardWasPressed('return') or keyboardWasPressed('space') then
+    if keyboardWasPressed('return') or keyboardWasPressed('space') then
         -- pass in all important state info to the PlayState
         gStateMachine:change('play', {
             paddle = self.paddle,

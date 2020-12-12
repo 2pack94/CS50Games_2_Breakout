@@ -19,7 +19,7 @@ end
 
 function HighScoreState:update(dt)
     -- return to the start screen
-    if keyboardWasPressed('escape') or keyboardWasPressed('enter') or keyboardWasPressed('return') then
+    if keyboardWasPressed('escape') or keyboardWasPressed('return') then
         gSounds['wall-hit']:play()
         
         gStateMachine:change('start', {

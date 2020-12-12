@@ -35,7 +35,7 @@ function VictoryState:update(dt)
     end
 
     -- go to play screen if the player presses Enter
-    if keyboardWasPressed('enter') or keyboardWasPressed('return') then
+    if keyboardWasPressed('return') then
         gStateMachine:change('serve', {
             level = self.level + 1,
             bricks = LevelMaker.createMap(self.level + 1),

@@ -32,7 +32,7 @@ function StartState:update(dt)
     end
 
     -- confirm whichever option we have selected to change screens
-    if keyboardWasPressed('enter') or keyboardWasPressed('return') then
+    if keyboardWasPressed('return') then
         gSounds['confirm']:play()
 
         if self.highlighted == 0 then

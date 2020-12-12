@@ -53,7 +53,7 @@ function PaddleSelectState:update(dt)
     end
 
     -- select paddle and move on to the serve state, passing in the selection
-    if keyboardWasPressed('return') or keyboardWasPressed('enter') then
+    if keyboardWasPressed('return') then
         gSounds['confirm']:play()
 
         gStateMachine:change('serve', {

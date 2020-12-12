@@ -29,7 +29,7 @@ end
 
 function EnterHighScoreState:update(dt)
     -- update scores table, if enter was pressed
-    if keyboardWasPressed('enter') or keyboardWasPressed('return') then
+    if keyboardWasPressed('return') then
         -- name for this high score
         local name = ''
         -- convert char to string and concatenate
